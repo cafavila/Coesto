@@ -59,15 +59,15 @@
                 <div id="descripcion" class="span3 offset3">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices dapibus massa non pretium. Morbi vitae sem adipiscing, mattis ligula ut, vehicula leo.</p>
                 </div>
-                <img src="http://placehold.it/450x250_carrousel" alt="Carrusel de Imagenes" />
+                <img class="img-polaroid" src="http://placehold.it/440x250/carrousel" alt="Carrusel de Imagenes" />
             </div>
             <div class="row">
                 <div class="span4">
                     <div class="tema well" ng-controller="NoticiasList">
                         <h3>{{titular}}</h3>
                         <ul class="noticias">
-                            <li ng-repeat="news in news">
-                                <h4>{{news.titular}}</h4>
+                            <li ng-repeat="news in news | orderBy:orderProp:reverse" class="thumbnail">
+                                <h4><a href="#/news/{{news.id}}">{{news.titular}}</a></h4>
                                 <p><strong>{{news.fecha}}</strong></p>
                                 <p>{{news.resumen}}</p>
                             </li>

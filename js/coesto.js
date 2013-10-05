@@ -14,6 +14,7 @@ var inicio = function ()
     {
         console.log('Hizo click');
         $('div.jq').fadeTo('slow', 0.1);
+        $('div.jq').fadeTo('slow', 0.5);
     });
 }
 $(document).ready(inicio);
