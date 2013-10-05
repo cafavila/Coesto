@@ -59,14 +59,14 @@
                 <div id="descripcion" class="span3 offset3">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices dapibus massa non pretium. Morbi vitae sem adipiscing, mattis ligula ut, vehicula leo.</p>
                 </div>
-                <img src="http://placehold.it/250x200" alt="Carrusel de Imagenes" />
+                <img src="http://placehold.it/450x250_carrousel" alt="Carrusel de Imagenes" />
             </div>
             <div class="row">
                 <div class="span4">
                     <div class="tema well" ng-controller="NoticiasList">
                         <h3>{{titular}}</h3>
                         <ul class="noticias">
-                            <li ng-repeat="news in Noticias">
+                            <li ng-repeat="news in news">
                                 <h4>{{news.titular}}</h4>
                                 <p><strong>{{news.fecha}}</strong></p>
                                 <p>{{news.resumen}}</p>
@@ -87,12 +87,12 @@
                     </div>
                 </div>
             </div>
+        <div class="jq">
+            <pre>
+            <p>JQUERY</p>
+            </pre>
+        </div>
         </section>
-        <article>
-            <div class="jq">
-                <p>JQUERY</p>
-            </div>
-        </article>
         <br />
         <!-- Footer -->
         <footer>

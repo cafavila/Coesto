@@ -4,11 +4,11 @@ var inicio = function ()
     $('div.jq').mouseenter(function ()
     {
         console.log('mouseenter');
-        $('div.jq').fadeTo('fast', 1);
+        $('div.jq').fadeTo('fast', 0.5);
     });
     $('div.jq').mouseleave(function ()
     {
-        $('div.jq').fadeTo('fast', 0.5);
+        $('div.jq').fadeTo('fast', 1);
     });
     $('div.jq').click(function ()
     {
