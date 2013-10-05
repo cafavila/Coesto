@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+    <head>
+        <meta charset="utf-8" />
+        <title>COESTO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="ADIMEN SpA" />
+        <meta name="description" content="Adimen SpA Desarrollo de WebApp" />
+    <!-- Styles -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/coesto.css" rel="stylesheet" type="text/css" />
+    <!-- Script -->
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/coesto.js"></script>
+    <!-- AddThis Smart Layers BEGIN -->
+    <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521ccfb51841c0b9"></script>
+    <script type="text/javascript">
+        addthis.layers({
+            'theme': 'dark',
+            'share': {
+                'position': 'left',
+                'numPreferredServices': 5
+            }
+        });
+    </script>
+    <!-- AddThis Smart Layers END -->
+    </head>
+    <body>
+    <!-- Menu -->
+        <header class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">COESTO</a>
+                    <nav class="nav-collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#">Inicio</a></li>
+                            <li><a href="#Quienes">Quienes Somos</a></li>
+                            <li><a href="#Historia">Historial</a></li>
+                            <li><a href="#Noticias">Noticias</a></li>
+                            <li><a href="#Documentos">Documentos</a></li>
+                            <li><a href="#Inscripcion">Inscripcion</a></li>
+                            <li><a href="#Enlaces">Enlaces</a></li>
+                            <li><a href="#Contacto">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Contenido -->
+        <section class="container" ng-app>
+            <div class="hero-unit">
+                <h1 id="titulo" style="color: #B0BC66">COESTO</h1>
+                <div id="descripcion" class="span3 offset3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices dapibus massa non pretium. Morbi vitae sem adipiscing, mattis ligula ut, vehicula leo.</p>
+                </div>
+                <img src="http://placehold.it/250x200" alt="Carrusel de Imagenes" />
+            </div>
+            <div class="row">
+                <div class="span4">
+                    <div class="tema well" ng-controller="NoticiasList">
+                        <h3>{{titular}}</h3>
+                        <ul class="noticias">
+                            <li ng-repeat="news in Noticias">
+                                <h4>{{news.titular}}</h4>
+                                <p><strong>{{news.fecha}}</strong></p>
+                                <p>{{news.resumen}}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div id="enlace" class="tema well">
+                        <h3>Enlaces</h3>
+                        <p>Nunc tincidunt magna elit, ac accumsan urna porta eu. Sed egestas, metus in tincidunt pulvinar, libero lectus hendrerit risus, ac condimentum lectus lacus in justo.</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="tema well">
+                        <h3>Contacto</h3>
+                        <p>Nunc tincidunt magna elit, ac accumsan urna porta eu. Sed egestas, metus in tincidunt pulvinar, libero lectus hendrerit risus, ac condimentum lectus lacus in justo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article>
+            <div class="jq">
+                <p>JQUERY</p>
+            </div>
+        </article>
+        <br />
+        <!-- Footer -->
+        <footer>
+            <address>
+                <strong>&copy 2013 AdimenTech.</strong>
+                <a href="mailto:#">contacto@adimen.cl</a>
+                <p>Av. 11 de Septiembre 1881. Of. 1515.</p>
+                <p>Providencia. Santiago. Chile</p>
+            </address>
+        </footer>
+        <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="js/controllers.js"></script>
+    </body>
+</html>

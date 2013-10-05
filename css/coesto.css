@@ -1,0 +1,42 @@
+body 
+{
+    padding-top: 60px;
+    background-color: #359CAD;
+    background-image: url("../img/fondoCoesto.jpg") linear-gradient();
+}
+#winterfall
+{
+    background-color: #42A797;
+    height: 250px;
+    width: 250px;
+    margin-left: 100px;
+}
+#navbar-inverse
+{
+    background-color: #A2A797;
+    color: #B0BC66;
+}
+section 
+{
+    background-color: #EDD6AD;
+    margin-top: 0px;
+    padding: 10px;
+}
+.descripcion 
+{
+    text-align: justify;
+}
+.titulo 
+{
+    color: #393C31;
+}
+footer 
+{
+    background-color: #393C31;
+    color: #B0BC66;
+    text-align: center;
+    position: relative;
+    bottom: -20px;
+    width: 100%;
+    margin-top: 10px;
+}
